@@ -2,8 +2,6 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta HTTP-EQUIV="EXPIRES" CONTENT="86400">
-    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">  
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Personal Course Assignment Portal for WDD 230. Gives users access to assignment links.">
     <title>Gibran's WDD230 Course Portal</title>
@@ -13,14 +11,16 @@
         example reference has minimized the "normalize.css" file by removing all the spaces and line returns. Open the file to view the min version.
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
   </head>
 
   <body>
     <div id="content">
         <header>
             <h1 class="page-title">Gibran E. Castillo
-                <img class="picture-right-image" src="/assets/gibran.jpeg" alt="Picture of Gibran Castillo">
+                <img class="picture-right-image" src="/assets/gibran.webp" alt="Profile picture of Gibran Castillo">
             </h1>
         </header>
 
@@ -48,7 +48,7 @@
 
         <footer>
             <p class ="info">
-                &copy; <span id="copyright"></span> | Gibran E. Castillo | Honduras | <a class="three" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+                &copy; <span id="copyright"></span> | Gibran E. Castillo | Honduras | <a class="portal" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
                 <br>
                 <span id="last_modified"></span>
             </p>
@@ -56,5 +56,6 @@
     </div>
     
     <script src="/js/last_modified.js" defer></script>
+
   </body>
 </html>

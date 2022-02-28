@@ -1,5 +1,9 @@
 @media only screen and (min-width: 33em) {
-    #mainColumns {
-        grid-template-columns: 1fr 1fr;
-    }
+  .picture-right-image {
+    float: right;
+  }
+
+  #container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
