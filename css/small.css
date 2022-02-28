@@ -15,7 +15,8 @@ main {
 header,
 footer {
   background-color: rgb(143, 111, 111);
-  color: ghostwhite;
+  /* color: ghostwhite; */
+  color: #d8e7e7;
   text-align: center;
   border-radius: 25px;
   padding: 0.007px;
@@ -76,7 +77,8 @@ footer p a:hover {
 section {
   margin: 5px;
   border: 1px solid rgb(4, 22, 61);
-  background-color: rgb(190, 182, 158);
+  /* background-color: rgb(190, 182, 158); */
+  background-color: rgb(231, 228, 221);
   width: auto;
   border-radius: 10px;
 }
