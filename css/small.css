@@ -37,7 +37,6 @@ h2 {
   line-height: 1em;
   color: #000000;
   position: relative;
-
 }
 
 h3 {
@@ -78,7 +77,13 @@ footer p {
   border-bottom: inset grey;
 }
 
+ul {
+  padding: .5em;  
+}
+
 li {
+  margin-top: .7em; 
+  margin-left: 3em;
   text-align: justify;
   font-family: 'Spectral', serif;
   font-size: 1.25em;
@@ -97,12 +102,12 @@ li {
   text-align: center;
 }
 
-.three {
-  color: #d8e7e7;
+.portal {
+  color: #000000;
 }
 
 #last_modified {
-  color: brown;
+  color: #d8e7e7;
 }
 
 /* For design-princliples.html */
@@ -153,8 +158,8 @@ li {
   height: 768px;
 }
 
-.portal {
-  color: #d8e7e7;
+.three {
+  color: #000000;
 }
 
 .design {
