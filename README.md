@@ -83,13 +83,14 @@ The following are correctly declared and used in the head section of all [HTML](
 • All embedded or inline CSS is avoided
 • [Google Fonts API](https://fonts.google.com/)
 • [Google Fonts Information](https://developers.google.com/fonts/)
-[Get Started with the Google Fonts API](https://developers.google.com/fonts/docs/getting_started)
+• [Get Started with the Google Fonts API](https://developers.google.com/fonts/docs/getting_started)
 • W3C compliant—validated to identify possible issues—[W3C validator](https://jigsaw.w3.org/css-validator/)
 • [CSS normalize](https://necolas.github.io/normalize.css/) is used and up to date
 • [Unique ID selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)—if an ID selector is used, it is unique to a page (the planned use of [class selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) is preferred)
 • All pages are tested for responsive web design with appropriately sized text, links, and no scrolling to the right nor deadspace.
 • The CSS is not repeated or duplicated unnecessarily between views nor duplicated because of the use of non-congruent selectors nor left unused from the design and development cycle.
 • No reasonable violations of design principles in the styling and layout in all three views.
+• [Responsively App](https://responsively.app/)
 
 ## JavaScript
 • No errors nor references to unused JavaScript functions per page
@@ -110,3 +111,4 @@ The following are correctly declared and used in the head section of all [HTML](
 ## Performance
 • The page weight does not exceed 500KB
 • [Google PageSpeed test](https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect) results at least 90
+
