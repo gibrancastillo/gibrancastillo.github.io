@@ -1,0 +1,352 @@
+/* phone-default --> Small/Phone View ***************/
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Serif+Display:wght@600&family=Poppins:wght@300&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dongle', sans-serif;
+  background-color: #A9D6E5;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  /* background-color: #2C7DA0; */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  line-height: 45px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Spectral", sans-serif;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+.header_title {
+  font-family: "Spectral", sans-serif;
+  font-size: 40px;
+  justify-content: center;
+  margin: 0.5px;
+}
+
+.motto {
+  text-align: left;
+  font-style: italic;
+  font-size: 1.5em;
+  font-family: "Karla", serif;
+}
+
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+.primary-nav {
+  background-color: #61A5C2;
+  color: #fff;
+}
+
+.site-header,
+.footer-nav {
+  background-color: #2C7DA0;
+}
+
+nav {
+  background-color: #61A5C2;
+  text-align: center;
+  box-shadow: 0 0 30px #333;
+  display: flex;
+  flex-direction: column;
+}
+
+nav div {
+  flex: 1 1 100%;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: 'Poppins', serif;
+}
+
+nav a:hover {
+  background-color: #8d8a89;
+  color: #A9D6E5;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: #000;
+  /* background-color: tomato; */
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  /* font-weight: 700; */
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover {
+  color: #000;
+  background-color: #fff;
+  font-weight: 700;
+  background-image: url(../assets/weather.png);
+}
+
+.navigation a.ham::before {
+  content: "🍔 ";
+}
+
+.active {
+  background-color: brown;
+  color: white;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display 
+   block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+  display: block;
+}
+
+.responsive a.ham::before {
+  content: "❌ ";
+}
+
+main {
+  text-align: center;
+}
+
+div {
+  font-style: italic;
+  text-align: left;
+  font-family: "Karla", serif;
+}
+
+.banner {
+  border: dashed 1px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.forecast {
+  border: dashed 1px;
+  padding: 15px;
+  margin: 10px;
+
+}
+
+.article {
+  border: dashed 1px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.contact {
+  border: dashed 1px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.content {
+  background-color: #f5f5f5;
+  /* padding: 12px; */
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  text-align: left;
+  /* margin: 10px; */
+  justify-content: center;
+  align-items: center;
+
+  display: block;
+  margin: 10px auto;
+  border: 1px dashed #000;
+  padding: 15px;
+  /* background-color: #4f5d73; */
+  color: #000;
+  max-width: 500px;
+}
+
+.herodiv {
+  margin: 10px auto;
+  position: relative;
+  max-width: 100%;
+  max-height: 90%;
+}
+
+picture img {
+  box-shadow: 0 0 1rem #333;
+  max-width: 100%;
+}
+
+.label {
+  visibility: hidden;
+  position: absolute;
+  color: yellow;
+  top: 10px;
+  right: 30px;
+}
+
+.label:after {
+  visibility: Visible;
+  position: absolute;
+  color: yellow;
+  top: 10px;
+  right: 30px;
+  content: "Medium";
+}
+
+.stats {
+  position: absolute;
+  top: 10px;
+  right: 230px;
+  padding-left: 0;
+  background: radial-gradient(#eee, #f5cf87);
+  border: 1px solid #000;
+  box-shadow: 0 0 30px #333;
+  width: 100;
+  max-height: 50%;
+  font-size: 9px;
+  text-align: left;
+  padding-bottom: 60px;
+  padding-top: .1px;
+  padding-left: 25px;
+  padding-right: 50px;
+}
+
+.stats span {
+  margin-top: 1px;
+  font-style: italic;
+  font-weight: 700;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.left {
+  grid-column: 1;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Karla", serif;
+  color: #000000;
+  padding: 1em;
+}
+
+.right {
+  grid-column: 2;
+}
+
+.domain {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* index.html > main > section */
+.center {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: row;
+}
+
+.center div {
+  flex: 1 1 100%;
+}
+
+nav,
+main,
+footer {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: white;
+  /* background-color: #2C7DA0; */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 1.2em;
+  font-family: 'Karla', sans-serif;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: lightgreen;
+}

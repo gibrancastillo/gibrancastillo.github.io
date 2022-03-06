@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <title>The Blue Sky Weather Site - Home</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/weather_logo.webp" alt="The Blue Sky Weather Site Logo">
+        <section>
+            <h1 class="header_title">The Blue Sky Weather Site</h1>
+            <div class="motto">-"The most accurate weather"</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="ham" onclick="toggleMenu()">&#9776 Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="center content">
+            <div class="left">
+                <h2>Site Purpose</h2>
+                <p>
+                    To provide locals and visitors to the The Blue Sky Weather Site with pertinent weather information.
+                    It aims to broadcasts weather forecasts and weather-related news and analysis that that will assist 
+                    people in making decisions for outdoor activities and local events.
+                </p>
+            </div>
+            <div class="right domain">
+                <h2>Domain Name</h2>
+                <p>blueskyweather.info</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>&copy; <span id="year"></span>
+        <span> | Gibran E. Castillo | Honduras | </span>
+        <a href="../w01/asgmt1/index.html" target="_blank">Assignment Portal</a>
+        <br>
+        <span id="current_date"></span>
+    </footer>
+    <script src="./js/tbsws.js" defer></script>
+</body>
+</html>

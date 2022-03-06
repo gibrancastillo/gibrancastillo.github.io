@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- phone-default -->
+    <link rel="stylesheet" href="./css/small.css">
+    <!-- enhance-tablet -->
+    <link rel="stylesheet" href="./css/medium.css">
+    <!-- enhance-desktop -->
+    <link rel="stylesheet" href="./css/large.css">
+    <title>The Blue Sky Weather Site - Preston</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/weather_logo.webp" alt="The Blue Sky Weather Site Logo">
+        <section>
+            <h1 class="header_title">The Blue Sky Weather Site</h1>
+            <div class="motto">-"The most accurate weather"</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="ham" onclick="toggleMenu()">&#9776 Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <!-- <div class="content">
+            <div class="herodiv">
+                <picture>
+                    <img srcset="./assets/weather_hero.jpeg" alt="The Blue Sky Weather Site Hero Image">
+                </picture>
+                <p class="label">Place holder</p>
+                <section class="stats">
+                    <h2>Weather Summary</h2>
+                    <p>Currently: <span>38°F Broken Clouds</span></p>
+                    <p>Wind Chill: <span id="wind-chill"></span></p>
+                    <p>High: <span>41°F</span></p>
+                    <p>Humidity: <span>50%</span></p>
+                    <p>Wind Speed: <span>5 mph</span></p>
+                </section>
+            </div>
+        </div> -->
+        <div class="banner">Hero w/ weather Summary</div>
+        <div class="forecast">5 Day Forecast</div>
+        <div class="article">Article</div>
+        <div class="contact">Contact Information</div>
+    </main>
+    <footer class="footer">
+        <span>&copy; <span id="year"></span>
+        <span> | Gibran E. Castillo | Honduras | </span>
+        <a href="../w01/asgmt1/index.html" target="_blank">Assignment Portal</a>
+        <br>
+        <span id="current_date"></span>
+    </footer>
+    <script src="./js/tbsws.js" defer></script>
+</body>
+</html>
