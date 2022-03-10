@@ -1,31 +1,5 @@
 /* Media Query for medium+ views --> enhance-tablet */
 @media only screen and (min-width: 32.5em) {
-  picture img {
-    box-shadow: 0 0 1rem #333;
-    max-width: 100%;
-  }
-
-  .label {
-    visibility: hidden;
-    position: absolute;
-    color: yellow;
-    top: 10px;
-    right: 30px;
-  }
-
-  .stats {
-    position: static;
-  }
-
-  .label:after {
-    visibility: Visible;
-    position: absolute;
-    color: yellow;
-    top: 10px;
-    right: 30px;
-    content: "Small";
-  }
-
   nav {
     margin: 0 auto;
   }
@@ -69,11 +43,13 @@
     text-align: center;
   }
 
-  .content {
-    background-color: rgb(0, 162, 255);
+  .herodiv {
+    position: relative;
   }
 
-  .content img {
-    height: 50%;
+  .stats {
+    margin: 10px auto;
+    position: static;
+    opacity: 1;
   }
 }

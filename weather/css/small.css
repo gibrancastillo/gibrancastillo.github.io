@@ -25,45 +25,25 @@ body {
 
 header {
   background-color: white;
-  /* background-color: #2C7DA0; */
   display: grid;
   grid-template-columns: auto 1fr;
   justify-items: center;
   align-items: center;
   padding: 10px;
-  max-width: 950px;
+  max-width: auto;
   margin: 0 auto;
 }
 
-img {
+header img {
   max-width: 100%;
   width: 285px;
   height: 286px;
 }
 
-h1 {
+header section h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
   line-height: 45px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Spectral", sans-serif;
-  color: #000000;
-  padding: 10px;
-  text-align: center;
-}
-
-.header_title {
-  font-family: "Spectral", sans-serif;
-  font-size: 40px;
-  justify-content: center;
-  margin: 0.5px;
 }
 
 .motto {
@@ -73,29 +53,15 @@ h6 {
   font-family: "Karla", serif;
 }
 
-h2,
-h3,
-ul,
-p {
-  margin: 0;
-}
-
-.primary-nav {
-  background-color: #61A5C2;
-  color: #fff;
-}
-
-.site-header,
-.footer-nav {
-  background-color: #2C7DA0;
-}
-
 nav {
-  background-color: #61A5C2;
   text-align: center;
   box-shadow: 0 0 30px #333;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  /* max-width: 970px; */
+  background-color: #000;
 }
 
 nav div {
@@ -115,13 +81,6 @@ nav a {
 nav a:hover {
   background-color: #8d8a89;
   color: #A9D6E5;
-}
-
-nav {
-  margin: 0 auto;
-  max-width: 760px;
-  background-color: #000;
-  /* background-color: tomato; */
 }
 
 .navigation {
@@ -144,7 +103,6 @@ nav {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  /* font-weight: 700; */
   transition: 0.5s;
   font-size: clamp(1rem, 2vmin, 1.5rem);
 }
@@ -177,160 +135,227 @@ nav {
   content: "❌ ";
 }
 
+
+
+
+
+
+
+
 main {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+h1 {
   text-align: center;
-}
-
-div {
-  font-style: italic;
-  text-align: left;
-  font-family: "Karla", serif;
-}
-
-.banner {
-  border: dashed 1px;
-  padding: 15px;
-  margin: 10px;
-}
-
-.forecast {
-  border: dashed 1px;
-  padding: 15px;
-  margin: 10px;
-
-}
-
-.article {
-  border: dashed 1px;
-  padding: 15px;
-  margin: 10px;
-}
-
-.contact {
-  border: dashed 1px;
-  padding: 15px;
-  margin: 10px;
-}
-
-.content {
-  background-color: #f5f5f5;
-  /* padding: 12px; */
-  border-radius: 10px;
-  /* border: 1px solid black; */
-  text-align: left;
-  /* margin: 10px; */
-  justify-content: center;
-  align-items: center;
-
-  display: block;
-  margin: 10px auto;
-  border: 1px dashed #000;
-  padding: 15px;
-  /* background-color: #4f5d73; */
-  color: #000;
-  max-width: 500px;
+  font-size: 3.5rem;
+  text-shadow: .25rem .25rem .75rem #333;
+  margin-bottom: 1rem;
 }
 
 .herodiv {
   margin: 10px auto;
   position: relative;
-  max-width: 100%;
-  max-height: 90%;
-}
-
-picture img {
-  box-shadow: 0 0 1rem #333;
-  max-width: 100%;
-}
-
-.label {
-  visibility: hidden;
-  position: absolute;
-  color: yellow;
-  top: 10px;
-  right: 30px;
-}
-
-.label:after {
-  visibility: Visible;
-  position: absolute;
-  color: yellow;
-  top: 10px;
-  right: 30px;
-  content: "Medium";
 }
 
 .stats {
   position: absolute;
-  top: 10px;
-  right: 230px;
-  padding-left: 0;
-  background: radial-gradient(#eee, #f5cf87);
+  bottom: 25px;
+  left: 25px;
+  background: radial-gradient(#eee, #4567aa);
   border: 1px solid #000;
+  padding: 1.5rem;
   box-shadow: 0 0 30px #333;
-  width: 100;
-  max-height: 50%;
-  font-size: 9px;
-  text-align: left;
-  padding-bottom: 60px;
-  padding-top: .1px;
-  padding-left: 25px;
-  padding-right: 50px;
+  opacity: 0.5;
+  /* 0.9; */
 }
 
-.stats span {
-  margin-top: 1px;
-  font-style: italic;
-  font-weight: 700;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.left {
-  grid-column: 1;
+h2 {
+	margin: 0 0 .5rem;
+	border-bottom: 1px solid #000;
 }
 
 p {
-  font-size: 16px;
-  font-family: "Karla", serif;
-  color: #000000;
-  padding: 1em;
+	margin: 0;
 }
 
-.right {
-  grid-column: 2;
+.stats span {
+  font-style: italic;
+  font-weight: 700;
 }
 
-.domain {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+
+h2 {
+  font-size: 2em;
+  color: #001D3D;
+  font-family: 'Spectra' sans-serif;
+  margin-left: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-col {
+  flex: 1 1 auto;
+  background-color: #141413;
+}
+
+.flex-col,
+.column-col,
+.grid-col {
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
   text-align: center;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.flex-col:hover,
+td:hover,
+.column-col:hover,
+.grid-col:hover {
+  opacity: 0.75;
+  background-color: #233446;
+  color: #1a1916;
 }
 
-/* index.html > main > section */
-.center {
-  grid-column: 1 / 3;
-  display: flex;
-  flex-direction: row;
+.flex,
+.column,
+.grid {
+  border-right: 1px solid #333;
 }
 
-.center div {
-  flex: 1 1 100%;
+.col-head {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid #333;
+  text-align: center;
 }
 
-nav,
-main,
-footer {
-  max-width: 970px;
-  margin: 0 auto;
+img {
+  padding: 0.25rem;
 }
+
+.data {
+  display: block;
+  padding: 0 5px 5px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.col-head,
+th {
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: #001D3D;
+  color: #f1f0ea;
+}
+
+/* Table styling and layout with no extras*/
+table,
+th,
+td {
+  border: thin solid #333;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+td {
+  background-color: #ffc300;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Column styling and layout */
+.column {
+  column-count: 6;
+  column-gap: 0;
+}
+
+.column img {
+  width: 50%;
+}
+
+.column-col {
+  background-color: #ffc300;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.grid-col {
+  background-color: #ffc300;
+}
+
+.image-day {
+  border-radius: 40px;
+}
+
+
+.article p {
+  font-family: 'Karla', sans-serif;
+  line-height: 1.5;
+  margin: .5em;
+  font-size: 1.5em;
+}
+
+
+.travel-time {
+  position: relative;
+  top: -270px;
+  right: -530px;
+
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.preston-contact-us {
+  position: relative;
+  top: -270px;
+  right: -530px;
+
+  font-family: 'Karla', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+footer a:link,
+footer a:visited {
+  color: #cf2222;
+}
+
 
 footer {
   background-color: white;
-  /* background-color: #2C7DA0; */
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -338,17 +363,19 @@ footer {
   padding: 5px;
   font-size: 1.2em;
   font-family: 'Karla', sans-serif;
-}
-
-.footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
   text-align: center;
   margin-top: 10px;
+  max-width: auto;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
 }
 
 a:hover {
+  color: #f8cd0c;
+}
+
+footer a:hover {
   color: lightgreen;
 }
