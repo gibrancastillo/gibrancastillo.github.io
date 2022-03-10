@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Blue Sky Weather Site">
+    <meta name="author" content="Gibran Castillo">
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- phone-default -->
     <link rel="stylesheet" href="./css/small.css">
@@ -10,51 +12,126 @@
     <link rel="stylesheet" href="./css/medium.css">
     <!-- enhance-desktop -->
     <link rel="stylesheet" href="./css/large.css">
+
+    <link rel="stylesheet" href="./css/preston.css">
     <title>The Blue Sky Weather Site - Preston</title>
 </head>
 <body>
     <header>
         <img class="logo" src="./assets/weather_logo.webp" alt="The Blue Sky Weather Site Logo">
         <section>
-            <h1 class="header_title">The Blue Sky Weather Site</h1>
+            <h1 class="header-title">The Blue Sky Weather Site</h1>
             <div class="motto">-"The most accurate weather"</div>
         </section>
     </header>
     <nav>
         <ul class="navigation">
             <li><a href="#" class="ham" onclick="toggleMenu()">&#9776 Menu</a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a class="active" href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Preston Idaho</h2>
-        <!-- <div class="content">
-            <div class="herodiv">
-                <picture>
-                    <img srcset="./assets/weather_hero.jpeg" alt="The Blue Sky Weather Site Hero Image">
-                </picture>
-                <p class="label">Place holder</p>
-                <section class="stats">
-                    <h2>Weather Summary</h2>
-                    <p>Currently: <span>38°F Broken Clouds</span></p>
-                    <p>Wind Chill: <span id="wind-chill"></span></p>
-                    <p>High: <span>41°F</span></p>
-                    <p>Humidity: <span>50%</span></p>
-                    <p>Wind Speed: <span>5 mph</span></p>
-                </section>
+        <h1>Preston Idaho</h1>
+        <div class="herodiv">
+            <picture>
+                <img srcset="./assets/weather_hero.jpeg" alt="The Blue Sky Weather Site Hero Image">
+            </picture>
+            <section class="stats">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span>38°F Broken Clouds</span></p>
+                <p>Wind Chill: <span id="wind-chill">34°F</span></p>
+                <p>High: <span>41°F</span></p>
+                <p>Humidity: <span>50%</span></p>
+                <p>Wind Speed: <span>5 mph</span></p>
+            </section>
+        </div>
+        <br><br>
+        <h2 class="fiveday">Five Day Forecast</h2>
+        <div class="flex">
+            <div class="flex-col">
+                <span class="col-head">Monday</span>
+                <img class="image-day" src="./assets/rain.jpeg" width="80px" height="80px" alt="Monday rain weather image!">
+                <span class="data"></span>
             </div>
-        </div> -->
-        <div class="banner">Hero w/ weather Summary</div>
-        <div class="forecast">5 Day Forecast</div>
-        <div class="article">Article</div>
-        <div class="contact">Contact Information</div>
+            <div class="flex-col">
+                <span class="col-head">Tuesday</span>
+                <img class="image-day" src="./assets/stormy.jpeg" width="80px" height="80px" alt="Tuesday stormy weather image!">
+                <span class="data"></span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Wednesday</span>
+                <img class="image-day" src="./assets/ray.jpeg" width="80px" height="80px" alt="Wednesday thunder weather image!">
+                <span class="data"></span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Thursday</span>
+                <img class="image-day" src="./assets/sunandrainy.jpeg" width="80px" height="80px" alt="Thursday sunny and rainy weather image!">
+                <span class="data"></span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Friday</span>
+                <img class="image-day" src="./assets/sun.jpeg" width="80px" height="80px" alt="Friday sunny weather image!">
+                <span class="data"></span>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="article">
+                <div id="travel-par">
+                    <h2>Featured article: Family Activities</h2>
+                    <p >
+                        In the beautiful town of Preston, Idaho families enjoy exploring the beautiful scenery by hiking through the mountains, 
+                        fishing in nearby rivers, and watching the sun set over the plains. Each season has different activities to offer. 
+                        In the winter months, families change into their snow gear to ski, snowshoe, or snowmobile. If staying warm is more your style, 
+                        then there are wonderful resorts with hot tubs and indoor activities that provide for ample family time and creating memories to last a lifetime.
+                    </p>
+                </div>
+                <img class="travel-time" src="./assets/flower.png" width="200px" height="200px" alt="" />
+          </div>
+
+        <div class="preston-contact">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853451145!2d-111.91534448893582!3d42.099741626372904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2shn!4v1646798223468!5m2!1ses!2shn" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="preston-contact-us">
+                <h3>Contact Information</h3>
+                <p>📍 777 E 7th S, Preston, ID 83263, USA</p>
+                <p>📧 info@blueskyweather.info</p>
+                <p>☎️ +1 (208) 343-9567</p>
+                
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank">
+                      <img
+                        src="./assets/fb_logo.png"
+                        alt="Facebook logo link to Facebook website"
+                        width="62px"
+                        height="62px"/>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                      <img
+                        src="./assets/twitter_logo.png" 
+                        alt="Twitter logo link to Twitter website"
+                        width="62px"
+                        height="62px"/>
+                    </a>
+                    <a href="https://github.com/" target="_blank">
+                      <img
+                        src="./assets/github_logo.png"
+                        alt="GitHub logo link to GitHub website"
+                        width="62px"
+                        height="62px"/>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
+    <footer>
         <span>&copy; <span id="year"></span>
         <span> | Gibran E. Castillo | Honduras | </span>
         <a href="../w01/asgmt1/index.html" target="_blank">Assignment Portal</a>
