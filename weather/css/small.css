@@ -135,9 +135,15 @@ nav a:hover {
   content: "❌ ";
 }
 
-
-
-
+picture.photoA {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+}
 
 
 
@@ -320,15 +326,10 @@ td {
   font-size: 1.5em;
 }
 
-
 .travel-time {
-  position: relative;
-  top: -270px;
-  right: -530px;
-
-  object-fit: cover;
-  justify-content: center;
-  align-items: center;
+  width: 30%;
+  margin: 0 0 0 2%;
+  float: right;
 }
 
 .preston-contact-us {
