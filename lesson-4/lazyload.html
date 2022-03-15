@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 - Asynchronous Loading</title>
+    <link rel="stylesheet" href="../w01/css/normalize.css">
+    <link rel="stylesheet" href="lazyload.css">
+</head>
+
+<body>
+    <main>
+        <h1>Progressive Loading (Images)</h1>
+        <picture>
+            <img src="./assets/placeholder_300x400.png" data-src="./assets/earth2.webp" alt="Earth">
+        </picture>
+        <picture>
+            <img src="./assets/placeholder_300x400.png" data-src="./assets/earth1.webp" alt="The milky way">
+        </picture>
+        <picture>
+            <img src="./assets/placeholder_300x400.png" data-src="./assets/space1.webp" alt="Space image one">
+        </picture>
+        <picture>
+            <img src="./assets/placeholder_300x400.png" data-src="./assets/space2.webp" alt="Space image two">
+        </picture>
+        <picture>
+            <img src="./assets/placeholder_300x400.png" data-src="./assets/space3.webp" alt="Space image three">
+        </picture>
+        <picture>
+            <img src="./assets/placeholder_300x400.png" data-src="./assets/potter_trio.jpeg" alt="The Harry Potter trio">
+        </picture>
+        
+    </main>
+    <footer>
+        <span>&copy; <span id="year"></span>
+        <span> | Gibran E. Castillo | Honduras | </span>
+        <a href="../w01/asgmt1/index.html" target="_blank">Assignment Portal</a>
+        <br>
+        <span id="current_date"></span>
+    </footer>
+
+    <script src="lazyload.js" defer></script>
+    <script src="../weather/js/tbsws.js"></script>
+</body>
+
+</html>
