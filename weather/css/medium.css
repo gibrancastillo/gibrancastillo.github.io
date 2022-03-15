@@ -43,13 +43,32 @@
     text-align: center;
   }
 
-  .herodiv {
-    position: relative;
+  .stats {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+    opacity: 0.5;
+  }
+  
+  h2 {
+    margin: 0 0 .5rem;
+    border-bottom: 1px solid #000;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .stats span {
+    font-style: italic;
+    font-weight: 700;
   }
 
-  .stats {
-    margin: 10px auto;
-    position: static;
-    opacity: 1;
-  }
+
+  /* Gallery Page */
+  
 }
