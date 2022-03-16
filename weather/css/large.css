@@ -1,3 +1,5 @@
+
+
 /* enhance-desktop */
 @media only screen and (min-width: 56em) {
   .herodiv {
@@ -13,119 +15,73 @@
     max-height: 120%;
   }
 
-  .label {
-    visibility: hidden;
-    position: absolute;
-    color: yellow;
-    top: 10px;
-    right: 30px;
-  }
-
-  .label:after {
-    visibility: Visible;
-    position: absolute;
-    color: yellow;
-    top: 10px;
-    right: 30px;
-    content: "Large";
-  }
-
-  /* .stats {
-    position: absolute;
-    top: 10px;
-    right: 450px;
-    left: 10px;
-    background: radial-gradient(#eee, #f5cf87);
-    border: 1px solid #000;
-    padding: 1rem;
-    box-shadow: 0 0 30px #333;
-    width: 100;
-    max-height: 50%;
-    font-size: 9px;
-    text-align: left;
-  }
-
-  .stats span {
-    font-style: italic;
-    font-weight: 700;
-    max-width: 100%;
-    max-height: 100%;
-  } */
-
   .stats {
     position: absolute;
-    bottom: 25px;
-    left: 25px;
+    bottom: 215px;
+    left: 85px;
     background: radial-gradient(#eee, #4567aa);
     border: 1px solid #000;
-    padding: 1.5rem;
     box-shadow: 0 0 30px #333;
     opacity: 0.5;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  
+
   h2 {
     margin: 0 0 .5rem;
     border-bottom: 1px solid #000;
   }
-  
+
   p {
     margin: 0;
   }
-  
+
   .stats span {
     font-style: italic;
     font-weight: 700;
   }
 
-  .navigation {
-    padding: 0;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    display: flex;
-    order: 1;
+  
+
+  .preston-contact {
+    display: grid;
+    width: fit-content;
+    height: 550px;
+  }
+
+  .preston-map {
+    width: fit-content;
+    height: 550px;
+  }
+
+  iframe {
+    width: 700px;
+    height: 550px;
+  }
+
+  .preston-contact-us {
     position: relative;
-    width: auto;
-    flex-direction: row;
+    top: -570px;
+    right: -770px;
+    font-size: 3.5rem;
+    font-family: 'Karla', sans-serif;
   }
-
-  .navigation li:first-child {
-    display: none;
+  
+  div.preston-contact-us p {
+    font-size: 2rem;
+    padding: 10px 0px 10px 0px;
   }
-
-  .navigation li {
-    display: block;
-    font-size: 25px;
-    /* flex: none; */
-    flex: 1 1 auto;
-  }
-
-  .navigation ul {
-    display: flex;
-    list-style-type: none;
-  }
-
-  .logo {
-    width: 150px;
-    height: 150px;
-    display: flex;
+  
+  img.social-media {
+    width: 62px;
+    height: 62px;
+    padding: 10px 0px 0px 0px;
   }
 
   footer {
-    max-width: 1200px;
+    max-width: 1400px;
     flex-direction: row;
   }
 
-  .navigation li a {
-    color: yellow;
-  }
+  /* Gallery Page */
 
-  .navigation a {
-    text-align: center;
-  }
-
-  .content {
-    background-color: rgb(255, 255, 255);
-    max-width: 650px;
-  }
 }
