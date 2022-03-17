@@ -1,0 +1,44 @@
+/* phone-default --> Small/Phone View */
+@media only screen and (max-width: 767px) {
+  .travel-time {
+    width: 70%;
+    margin: 0 0 0 15%;
+    float: none;
+  }
+
+  .stats {
+    position: static;
+    bottom: 25px;
+    left: 25px;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+    opacity: 1;
+    margin: 10px auto;
+    font-size: 1.5rem;
+  }
+
+  .preston-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preston-map {
+    padding: 15px 0px 0px 0px;
+  }
+
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+
+  .preston-contact-us {
+    float: left;
+    font-size: 1.5rem;
+  }
+
+  div.preston-contact-us p {
+    font-size: 1.3rem;
+  }
+}

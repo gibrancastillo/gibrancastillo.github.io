@@ -1,4 +1,4 @@
-/* phone-default --> Small/Phone View ***************/
+/* enhance-desktop */
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Serif+Display:wght@600&family=Poppins:wght@300&display=swap');
@@ -120,7 +120,7 @@ nav a:hover {
   color: #000;
   background-color: #fff;
   font-weight: 700;
-  background-image: url(../assets/weather.png);
+  /* background-image: url(../assets/weather.webp); */
 }
 
 .navigation a.ham::before {
@@ -167,34 +167,47 @@ picture.responsive_hero_image {
   color: black;
 }
 
+
+
+
+.herodiv {
+  margin: 10px auto;
+  position: relative;
+  max-width: 100%;
+  max-height: 90%;
+}
+
+picture img {
+  box-shadow: 0 0 1rem #333;
+  max-width: 100%;
+  max-height: 120%;
+}
+
 .stats {
-  position: static;
-  bottom: 25px;
-  left: 25px;
+  position: absolute;
+  bottom: 225px;
+  left: 85px;
   background: radial-gradient(#eee, #4567aa);
   border: 1px solid #000;
-  padding: 1.5rem;
   box-shadow: 0 0 30px #333;
-  opacity: 1;
-  margin: 10px auto;
-  font-size: 1.5rem;
+  opacity: 0.5;
+  font-size: 2rem;
 }
 
 h2 {
-	margin: 0 0 .5rem;
-	border-bottom: 1px solid #000;
+  margin: 0 0 .5rem;
+  border-bottom: 1px solid #000;
 }
 
 p {
-	margin: 0;
+  margin: 0;
 }
 
-h2 {
-  font-size: 2em;
-  color: #001D3D;
-  font-family: 'Spectra' sans-serif;
-  margin-left: 10px;
+.stats span {
+  font-style: italic;
+  font-weight: 700;
 }
+
 
 .flex {
   display: flex;
@@ -285,6 +298,11 @@ td {
   background-color: #ffc300;
 }
 
+.article {
+  background-color: rgb(243, 240, 240);
+  padding: 20px;
+  border: 1px solid #2b2b2b;
+}
 
 .article p {
   font-family: 'Karla', sans-serif;
@@ -301,34 +319,30 @@ td {
 
 
 .preston-contact {
-  display: grid;
-  width: fit-content;
-  height: 350px;
-  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  background-color: white;
 }
 
 .preston-map {
-  /* border: 1px solid red; */
-  width: fit-content;
-  height: 350px;
+  padding: 30px 0px 15px 0px;
 }
 
 iframe {
-  width: 500px;
-  height: 350px;
+  width: 700px;
+  height: 550px;
 }
 
 .preston-contact-us {
-  /* border: 1px solid green; */
-  position: relative;
-  top: -570px;
-  right: -770px;
-  font-size: 1.5rem;
+  padding: 0px 0px 0px 150px;
+  font-size: 3.5rem;
+  grid-column: span 2;
   font-family: 'Karla', sans-serif;
 }
 
 div.preston-contact-us p {
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 10px 0px 10px 0px;
 }
 
@@ -338,15 +352,16 @@ img.social-media {
   padding: 10px 0px 0px 0px;
 }
 
-
 footer a:link,
 footer a:visited {
-  color: #cf2222;
+  color: white;
 }
 
 footer {
-  background-color: white;
+  background-color: black;
+  color: yellow;
   display: flex;
+  flex-direction: row;
   flex-flow: column;
   align-items: center;
   justify-content: center;
@@ -358,6 +373,7 @@ footer {
   max-width: auto;
   margin: 0 auto;
   width: auto;
+  max-width: 100%;
   height: auto;
   border-radius: 15px;
 }
@@ -374,12 +390,14 @@ footer a:hover {
 
 
 
+
 /* Gallery Page */
 #gallery {
-  display:block;
-  background-color: #e3f0ff;    
-  margin: 15px 5px;        
+  display: block;
+  background-color: #e3f0ff;
+  margin: 15px 5px;
 }
+
 /* 
 .two_col {
   display: none;
