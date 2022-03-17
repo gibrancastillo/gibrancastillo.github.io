@@ -69,7 +69,6 @@ nav {
   flex-direction: column;
   margin: 0 auto;
   max-width: 100%;
-  /* max-width: 970px; */
   background-color: #000;
 }
 
@@ -146,6 +145,7 @@ nav a:hover {
 
 
 main {
+  /* max-width: 100%; */
   max-width: 1420px;
   margin: 0 auto;
 }
@@ -392,23 +392,28 @@ footer a:hover {
 
 
 /* Gallery Page */
-#gallery {
+.images {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+
+.gallery {
+  width: 350px;
+  height: 300px;
   display: block;
-  background-color: #e3f0ff;
-  margin: 15px 5px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* 
-.two_col {
-  display: none;
+.gallery:hover {
+  box-shadow: 0 0 40px yellow;        
 }
 
-.three_col {
-  display: none;
-}
-
-figcaption.gallery_caption {
+figcaption {
+  font-family: "Spectral", sans-serif;
   text-align: center;
-  font-family: "Poppins", "Trebuchet MS", sans-serif; 
-  font-size: 10px;
-} */
+}

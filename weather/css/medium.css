@@ -1,4 +1,5 @@
 /* Media Query for medium+ views --> enhance-tablet */
+/* Tablets (portrait) ----------- */
 @media only screen and (min-width: 768px) {
   nav {
     margin: 0 auto;
@@ -51,16 +52,16 @@
     box-shadow: 0 0 30px #333;
     opacity: 0.5;
   }
-  
+
   h2 {
     margin: 0 0 .5rem;
     border-bottom: 1px solid #000;
   }
-  
+
   p {
     margin: 0;
   }
-  
+
   .stats span {
     font-style: italic;
     font-weight: 700;
@@ -69,21 +70,23 @@
   .preston-map {
     padding: 20px 0px 10px 0px;
   }
-  
+
   iframe {
     width: 600px;
     height: 450px;
   }
-  
+
   .preston-contact-us {
     font-size: 2.5rem;
   }
-  
+
   div.preston-contact-us p {
     font-size: 1.5rem;
   }
 
-
   /* Gallery Page */
-  
+  .images {
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
