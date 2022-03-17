@@ -1,6 +1,6 @@
 /* phone-default --> Small/Phone View */
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 567px) {
+@media only screen and (max-width: 767px) {
   .travel-time {
     width: 70%;
     margin: 0 0 0 15%;
@@ -47,7 +47,6 @@
 
   /* Gallery Page */
   .images {
-    grid-template-columns: 1fr;
-    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

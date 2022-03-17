@@ -1,6 +1,7 @@
 /* Media Query for medium+ views --> enhance-tablet */
 /* Tablets (portrait) ----------- */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) { */
+@media only screen and (max-width: 1150px) {
   nav {
     margin: 0 auto;
   }
@@ -32,7 +33,6 @@
 
   .navigation li {
     display: block;
-    /* change state in small view */
     flex: 1 1 auto;
   }
 
@@ -84,9 +84,10 @@
     font-size: 1.5rem;
   }
 
+
+  
   /* Gallery Page */
   .images {
-    max-width: 1200px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
