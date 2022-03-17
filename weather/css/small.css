@@ -1,4 +1,5 @@
 /* phone-default --> Small/Phone View */
+/* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 767px) {
   .travel-time {
     width: 70%;
@@ -40,5 +41,12 @@
 
   div.preston-contact-us p {
     font-size: 1.3rem;
+  }
+
+
+
+  /* Gallery Page */
+  .images {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
