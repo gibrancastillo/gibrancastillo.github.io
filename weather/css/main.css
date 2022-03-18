@@ -105,6 +105,55 @@ nav a:hover {
   display: none;
 }
 
+
+@media screen and (min-width: 64em) {
+  .navigation {
+    display: flex;
+  }
+  nav {
+    margin: 0 auto;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation ul {
+    list-style-type: none;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation li a {
+    color: yellow;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+}
+
+
 .navigation a {
   display: block;
   padding: 0.75rem;
@@ -189,6 +238,7 @@ picture img {
   left: 85px;
   background: radial-gradient(#eee, #4567aa);
   border: 1px solid #000;
+  padding: 1.5rem;
   box-shadow: 0 0 30px #333;
   opacity: 0.5;
   font-size: 2rem;
