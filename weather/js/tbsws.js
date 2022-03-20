@@ -43,3 +43,8 @@ function toggleMenu() {
       .getElementsByClassName("navigation")[0]
       .classList.toggle("responsive");
 }
+
+
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
