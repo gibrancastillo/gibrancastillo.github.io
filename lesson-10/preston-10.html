@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Blue Sky Weather Site">
+    <meta name="author" content="Gibran Castillo">
+    <link rel="stylesheet" href="../weather/css/normalize.css">
+    <!-- phone-default -->
+    <link rel="stylesheet" href="../weather/css/main.css">
+    <!-- enhance-tablet -->
+    <link rel="stylesheet" href="../weather/css/medium.css">
+    <!-- enhance-desktop -->
+    <link rel="stylesheet" href="../weather/css/small.css">
+
+    <link rel="icon" type="image/x-icon" href="../weather/assets/favicon.ico">
+    <title>The Blue Sky Weather Site - Preston</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="../weather/assets/weather_logo.png" alt="The Blue Sky Weather Site Logo">
+        <section>
+            <h1 class="header-title">The Blue Sky Weather Site</h1>
+            <div class="motto">-"The most accurate weather"</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="ham" onclick="toggleMenu()">&#9776 Menu</a></li>
+            <li><a href="../weather/index.html">Home</a></li>
+            <li><a class="active" href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../weather/stormcenter.html">Storm Center</a></li>
+            <li><a href="../weather/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="herodiv">
+            <!-- srcset using Pixel Density -->
+            <!-- <img src="./assets/preston/summaryherosmall.png" alt="The Blue Sky Weather Site Hero Image"
+            srcset="./assets/preston/summaryherosmall.png 1x,
+            ./assets/preston/summaryheromedium.png 2x,
+            ./assets/preston/summaryherolarge.png 3x">
+            <figcaption>Hero Image</figcaption> -->
+
+            <!-- srcset using Width -->
+            <!-- <picture>
+                <img src="./assets/preston/weather_hero.jpeg" alt="The Blue Sky Weather Site Hero Image" sizes="50vw"
+                srcset="./assets/preston/weather_hero200.webp 200w,
+                ./assets/preston/weather_hero500.webp 500w,
+                ./assets/preston/weather_hero800.webp 800w">
+                <figcaption>Hero Image</figcaption>
+            </picture> -->
+
+            <!-- Picture tag and media queries -->
+            <picture class="responsive_hero_image">
+                <source media="(max-width: 100px)" srcset="../weather/assets/preston/wdd230_image_franklinOriginal200.webp">
+                <source media="(max-width: 300px)" srcset="../weather/assets/preston/wdd230_image_franklinOriginal400.webp">
+                <source media="(max-width: 700px)" srcset="../weather/assets/preston/wdd230_image_franklinOriginal800.webp">
+                <source media="(max-width: 1000px)" srcset="../weather/assets/preston/wdd230_image_franklinOriginal1100.webp">
+                <img src="../weather/assets/preston/wdd230_image_franklinOriginal.jpeg" alt="WDD230 Franklin Original Image">
+                <figcaption>Hero Image</figcaption>
+            </picture>
+            <section class="stats">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="temperature">38</span> &deg;F Broken Clouds</p>
+                <p>Feels Like: <span id="chill"></span> &deg;F</p>
+                <p>High: <span id="high">41</span> &deg;F</p>
+                <p>Humidity: <span id="humidity">50</span> %</p>
+                <p>Wind Speed: <span id="speed">5</span> mph</p> 
+            </section>
+        </div>
+
+        <br><br>
+
+        <h2 class="fiveday">Five Day Forecast</h2>
+        <div class="flex">
+            <div class="flex-col">
+                <span class="col-head">Monday</span>
+                <img class="image-day" src="../weather/assets/preston/rain.jpeg" width="80px" height="80px" alt="Monday rain weather image!">
+                <span class="data"></span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Tuesday</span>
+                <img class="image-day" src="../weather/assets/preston/stormy.jpeg" width="80px" height="80px" alt="Tuesday stormy weather image!">
+                <span class="data"></span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Wednesday</span>
+                <img class="image-day" src="../weather/assets/preston/ray.jpeg" width="80px" height="80px" alt="Wednesday thunder weather image!">
+                <span class="data"></span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Thursday</span>
+                <img class="image-day" src="../weather/assets/preston/sunandrainy.jpeg" width="80px" height="80px" alt="Thursday sunny and rainy weather image!">
+                <span class="data"></span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Friday</span>
+                <img class="image-day" src="../weather/assets/preston/sun.jpeg" width="80px" height="80px" alt="Friday sunny weather image!">
+                <span class="data"></span>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="article">
+            <div id="travel-par">
+                <h2>Featured article: Family Activities</h2>
+                <img class="travel-time" src="../weather/assets/preston/flower.png" width="200px" height="200px" alt="" />
+                <p >
+                    In the beautiful town of Preston, Idaho families enjoy exploring the beautiful scenery by hiking through the mountains, 
+                    fishing in nearby rivers, and watching the sun set over the plains. Each season has different activities to offer. 
+                    In the winter months, families change into their snow gear to ski, snowshoe, or snowmobile. If staying warm is more your style, 
+                    then there are wonderful resorts with hot tubs and indoor activities that provide for ample family time and creating memories to last a lifetime.
+                </p>
+            </div>        
+        </div>
+        
+        <br><br>
+    </main>
+
+    <div class="preston-contact">
+        <div class="preston-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1647361711732!5m2!1sen!2sus" loading="lazy"></iframe>
+        </div>
+        <div class="preston-contact-us">
+            <h3>Contact Information</h3>
+            <p>📍 777 E 7th S, Preston, ID 83263, USA</p>
+            <p>📧 <a href="info@blueskyweather.info?subject=Inquiry">info@blueskyweather.info</a></p>
+            <p>☎️ <a href="tel:2083439567">+1 (208) 343-9567</a></p>
+            
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="social-media" src="../weather/assets/fb_logo.png" alt="Facebook logo link to Facebook website"/>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img class="social-media" src="../weather/assets/twitter_logo.png" alt="Twitter logo link to Twitter website"/>
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img class="social-media" src="../weather/assets/github_logo.png" alt="GitHub logo link to GitHub website"/>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; <span id="year"></span>
+        <span> | Gibran E. Castillo | Honduras | </span>
+        <a href="../index.html" target="_blank">Assignment Portal</a>
+        <br>
+        <span id="current_date"></span>
+    </footer>
+
+    <script src="../weather/js/tbsws.js" defer></script>
+    <script src="../weather/js/windchill.js" defer></script>
+</body>
+</html>
