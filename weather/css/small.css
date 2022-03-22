@@ -21,6 +21,7 @@
   .preston-contact {
     flex-direction: column;
     align-items: center;
+    padding: 0px 0px 20px 0px;
   }
 
   .preston-map {
@@ -35,10 +36,18 @@
   .preston-contact-us {
     float: left;
     font-size: 1.5rem;
+    padding: 20px 0px 0px 20px;
   }
 
   div.preston-contact-us p {
     font-size: 1.3rem;
+  }
+
+
+
+  /* Home Page */
+  .cards {
+    grid-template-columns: 1fr;
   }
 
 
