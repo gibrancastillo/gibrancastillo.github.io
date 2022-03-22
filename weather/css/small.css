@@ -1,6 +1,4 @@
-/* phone-default --> Small/Phone View */
-/* Smartphones (portrait) ----------- */
-/* @media only screen and (max-width: 767px) { */
+/* phone-default --> Small/Phone View that is Smartphones (portrait) ----------- */
 @media only screen and (max-width: 39.9375em) {
   .travel-time {
     width: 70%;
