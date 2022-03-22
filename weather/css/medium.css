@@ -83,6 +83,13 @@
   }
 
 
+
+  /* Home Page */
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
   
   /* Gallery Page */
   .images {
