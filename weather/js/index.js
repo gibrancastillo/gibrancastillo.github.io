@@ -6,7 +6,11 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject); // temporary checking for valid response and data parsing
-    const towns = jsonObject['towns'];
+    const towns = jsonObject['towns'].filter((town) => {
+        if(town.name === "Soda Springs" || town.name === "Fish Haven" || town.name === "Preston") {
+            return town;
+        }
+    });
 
     for (let i = 0; i < towns.length; i++) {
       // Create card (section element)
@@ -40,7 +44,7 @@ fetch(requestURL)
       // Image
       let image = document.createElement("img");
       //image.setAttribute("src", towns[i].photo);
-      image.setAttribute("src", "./assets/gallery/placeholder_500x300.svg")
+      image.setAttribute("src", "./assets/home/city" + (i + 1) + ".jpeg")
       image.setAttribute("alt", towns[i].name + " - " + (i + 1));
       card.appendChild(image);
 
