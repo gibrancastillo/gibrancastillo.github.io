@@ -1,5 +1,4 @@
-/* Media Query for medium+ views --> enhance-tablet */
-/* Tablets (portrait) ----------- */
+/* Media Query for medium+ views --> enhance-tablet that is Tablets (portrait) ----------- */
 @media only screen and (min-width: 40em) and (max-width: 63.9375em) {
   nav {
     margin: 0 auto;
@@ -64,9 +63,6 @@
     font-style: italic;
     font-weight: 700;
   }
-
-
-
 
   .preston-contact {
     flex-direction: column;

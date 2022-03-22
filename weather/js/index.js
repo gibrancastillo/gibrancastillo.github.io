@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
+    // console.table(jsonObject); // temporary checking for valid response and data parsing
     const towns = jsonObject['towns'].filter((town) => {
         if(town.name === "Soda Springs" || town.name === "Fish Haven" || town.name === "Preston") {
             return town;
@@ -21,7 +21,7 @@ fetch(requestURL)
       h2.textContent = towns[i].name;
       card.appendChild(h2);
 
-      // Motto
+      // Town Motto
       let h3Motto = document.createElement("h3");
       h3Motto.textContent = towns[i].motto;
       card.appendChild(h3Motto);
