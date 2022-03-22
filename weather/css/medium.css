@@ -1,8 +1,6 @@
 /* Media Query for medium+ views --> enhance-tablet */
 /* Tablets (portrait) ----------- */
-/* @media only screen and (min-width: 768px) { */
-/* @media only screen and (max-width: 1150px) { */
-@media only screen and  (min-width: 40em) and (max-width: 63.9375em) {
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
   nav {
     margin: 0 auto;
   }
