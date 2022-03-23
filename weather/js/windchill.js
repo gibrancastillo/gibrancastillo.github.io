@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("load", (event) => {
+// document.addEventListener("DOMContentLoaded", function() {
     let temperature = document.querySelector("#temperature").innerText;
     let speed = document.querySelector("#speed").innerText;
     let chill = document.querySelector("#chill");
