@@ -232,7 +232,7 @@ picture img {
 
 .stats {
   position: absolute;
-  bottom: 225px;
+  bottom: 175px;
   left: 85px;
   background: radial-gradient(#eee, #4567aa);
   border: 1px solid #000;

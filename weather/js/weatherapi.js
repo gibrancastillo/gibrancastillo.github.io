@@ -7,7 +7,7 @@ fetch(weatherApiURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
+    // console.table(jsonObject); // temporary checking for valid response and data parsing
 	
 	if(document.querySelector("#currently") !== null) {
 		document.querySelector("#currently").textContent = jsonObject.weather[0].main;
@@ -30,7 +30,7 @@ fetch(forecastApiURL)
 	return response.json();
   })
   .then(function (jsonObject) {
-	console.table(jsonObject); // temporary checking for valid response and data parsing
+	// console.table(jsonObject); // temporary checking for valid response and data parsing
 	const forecasts = jsonObject["list"].filter((forecast) => {
 		if(forecast.dt_txt.includes(" 18:00:00")) {
 			return forecast;
