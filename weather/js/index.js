@@ -13,6 +13,15 @@ fetch(requestURL)
     });
 
     for (let i = 0; i < towns.length; i++) {
+      //<a href=""><section>...</section></a>
+      let anchored = document.createElement("a");
+      if(towns[i].name === "Soda Springs")
+        anchored.setAttribute("href", "soda-springs.html");
+      else if(towns[i].name === "Fish Haven")
+        anchored.setAttribute("href", "fish-haven.html");
+      else if(towns[i].name === "Preston")
+        anchored.setAttribute("href", "preston.html");
+
       // Create card (section element)
       let card = document.createElement('section');
 
@@ -40,7 +49,7 @@ fetch(requestURL)
       let h3RailFall = document.createElement("h3");
       h3RailFall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
       card.appendChild(h3RailFall);
-
+      
       // Image
       let image = document.createElement("img");
       //image.setAttribute("src", towns[i].photo);
@@ -48,7 +57,10 @@ fetch(requestURL)
       image.setAttribute("alt", towns[i].name + " - " + (i + 1));
       card.appendChild(image);
 
-      // Add card (section element) to class "cards" div element
-      document.querySelector("div.cards").appendChild(card);
+      // Add card (section element) to <a> element
+      anchored.appendChild(card)
+
+      // Add anchored (<a> element) to class "cards" div element
+      document.querySelector("div.cards").appendChild(anchored);
     }
   });
