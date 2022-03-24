@@ -264,7 +264,7 @@ p {
 
 .flex-col {
   flex: 1 1 auto;
-  background-color: #141413;
+  background-color: #bebeb6;
 }
 
 .flex-col,
@@ -306,10 +306,9 @@ img.image-day {
 
 .data {
   display: block;
-  /* padding: 0 5px 5px; */
   font-size: 2.5rem;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .col-head,
@@ -435,11 +434,32 @@ footer a:hover {
   color: lightgreen;
 }
 
+img.open-weather {
+  width: 150;
+  height: 150;
+  border-radius: 10px;
+}
+
 
 
 /* Home page */
 body {
   padding: 1em;
+}
+
+.four-seasons {
+  /* align-content: center; */
+  float: center;
+}
+
+picture.responsive_four_seasons_image {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: black;
 }
 
 .cards {

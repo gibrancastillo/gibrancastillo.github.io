@@ -13,7 +13,7 @@
     <!-- enhance-desktop -->
     <link rel="stylesheet" href="./css/small.css">
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>The Blue Sky Weather Site - Preston</title>
 </head>
 <body>
@@ -68,44 +68,18 @@
             </picture>
             <section class="stats">
                 <h2>Weather Summary</h2>
-                <p>Currently: <span id="temperature">38</span> &deg;F Broken Clouds</p>
-                <p>Feels Like: <span id="chill"></span> &deg;F</p>
-                <p>High: <span id="high">41</span> &deg;F</p>
-                <p>Humidity: <span id="humidity">50</span> %</p>
-                <p>Wind Speed: <span id="speed">5</span> mph</p> 
+                <p>Currently: <span id="currently"></span></p>
+                <p>High: <span id="temperature"></span> &deg;F</p>
+                <p>Wind Chill: <span id="chill"></span> &deg;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="speed"></span> mph</p> 
             </section>
         </div>
 
         <br><br>
 
         <h2 class="fiveday">Five Day Forecast</h2>
-        <div class="flex">
-            <div class="flex-col">
-                <span class="col-head">Monday</span>
-                <img class="image-day" src="./assets/preston/rain.jpeg" width="80px" height="80px" alt="Monday rain weather image!">
-                <span class="data"></span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Tuesday</span>
-                <img class="image-day" src="./assets/preston/stormy.jpeg" width="80px" height="80px" alt="Tuesday stormy weather image!">
-                <span class="data"></span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Wednesday</span>
-                <img class="image-day" src="./assets/preston/ray.jpeg" width="80px" height="80px" alt="Wednesday thunder weather image!">
-                <span class="data"></span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Thursday</span>
-                <img class="image-day" src="./assets/preston/sunandrainy.jpeg" width="80px" height="80px" alt="Thursday sunny and rainy weather image!">
-                <span class="data"></span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Friday</span>
-                <img class="image-day" src="./assets/preston/sun.jpeg" width="80px" height="80px" alt="Friday sunny weather image!">
-                <span class="data"></span>
-            </div>
-        </div>
+        <div class="flex"></div>
 
         <br><br><br>
 
@@ -150,12 +124,19 @@
     <footer>
         <span>&copy; <span id="year"></span>
         <span> | Gibran E. Castillo | Honduras | </span>
-        <a href="../w01/asgmt1/index.html" target="_blank">Assignment Portal</a>
+        <a href="../index.html" target="_blank">Assignment Portal</a>
         <br>
         <span id="current_date"></span>
+        <br><br>
+        <span>Powered by the <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></span>
+        <br>
+        <a href="https://openweathermap.org/" target="_blank">
+            <img class="open-weather" src="./assets/preston/OpenWeather-Logo.jpeg" alt="The OpenWeatherMap logo image">
+        </a>
     </footer>
 
-    <script src="./js/tbsws.js" defer></script>
     <script src="./js/windchill.js" defer></script>
+    <script src="./js/weatherapi.js" defer></script>
+    <script src="./js/tbsws.js" defer></script>
 </body>
 </html>
