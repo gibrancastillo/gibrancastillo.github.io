@@ -189,6 +189,11 @@ nav a:hover {
   color: white;
 }
 
+.active.active:hover {
+  background-color: brown;
+  color: white;
+}
+
 
 main {
   /* max-width: 100%; */

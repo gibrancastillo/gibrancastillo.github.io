@@ -1,0 +1,109 @@
+/* Media Query for medium+ views --> enhance-tablet that is Tablets (portrait) ----------- */
+@media only screen and (min-width: 40em) and (max-width: 63.9375em) {
+  nav {
+    margin: 0 auto;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation ul {
+    list-style-type: none;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation li a {
+    color: yellow;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .stats {
+    position: absolute;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    box-shadow: 0 0 30px #333;
+    opacity: 0.5;
+  }
+
+  h2 {
+    margin: 0 0 .5rem;
+    border-bottom: 1px solid #000;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .stats span {
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .preston-contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .preston-map {
+    padding: 20px 0px 10px 0px;
+  }
+
+  iframe {
+    width: 600px;
+    height: 450px;
+  }
+
+  .preston-contact-us {
+    float: left;
+    font-size: 1.5rem;
+    padding: 20px 0px 0px 20px;
+  }
+
+  div.preston-contact-us {
+    font-size: 1.9rem;
+  }
+  
+  div.preston-contact-us p {
+    font-size: 1.7rem;
+  }
+
+
+
+  /* Home Page */
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  
+  /* Gallery Page */
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
