@@ -31,8 +31,8 @@
             <li><a href="#" class="ham" onclick="toggleMenu()">&#9776 Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -85,8 +85,8 @@
 
         <div class="article">
             <div id="travel-par">
-                <h2>Featured article: Family Activities</h2>
-                <img class="travel-time" src="./assets/preston/flower.png" width="200px" height="200px" alt="" />
+                <h2 class="featured-article">Featured article: Family Activities</h2>
+                <img class="travel-time" src="./assets/preston/flower.png" alt="A beautiful yellow flower image" />
                 <p >
                     In the beautiful town of Preston, Idaho families enjoy exploring the beautiful scenery by hiking through the mountains, 
                     fishing in nearby rivers, and watching the sun set over the plains. Each season has different activities to offer. 
@@ -95,7 +95,10 @@
                 </p>
             </div>        
         </div>
-        
+        <br><br>
+
+        <div class="town-events"></div>
+
         <br><br>
     </main>
 
@@ -131,12 +134,19 @@
         <span>Powered by the <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></span>
         <br>
         <a href="https://openweathermap.org/" target="_blank">
-            <img class="open-weather" src="./assets/preston/OpenWeather-Logo.jpeg" alt="The OpenWeatherMap logo image">
+            <picture>
+                <source media="(max-width: 100px)" srcset="./assets/open_weather_logo200.webp">
+                <source media="(max-width: 300px)" srcset="./assets/open_weather_logo400.webp">
+                <source media="(max-width: 700px)" srcset="./assets/open_weather_logo800.webp">
+                <source media="(max-width: 1000px)" srcset="./assets/open_weather_logo1100.webp">
+                <img class="open-weather" src="./assets/open_weather_logo.webp" alt="The OpenWeatherMap logo image">
+            </picture>
         </a>
     </footer>
 
     <script src="./js/windchill.js" defer></script>
     <script src="./js/weatherapi.js" defer></script>
+    <script src="./js/prestonapi.js" defer></script>
     <script src="./js/tbsws.js" defer></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 //OpenWeatherMap: API Key (AppId) - 3269efc82e03c378edf3680c194b11a1
-const weatherApiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3269efc82e03c378edf3680c194b11a1";
-const forecastApiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=3269efc82e03c378edf3680c194b11a1";
+const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3269efc82e03c378edf3680c194b11a1";
+const forecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=3269efc82e03c378edf3680c194b11a1";
 
-fetch(weatherApiURL)
+fetch(weatherApiUrl)
   .then(function (response) {
     return response.json();
   })
@@ -25,7 +25,7 @@ fetch(weatherApiURL)
 	}
   });
 
-fetch(forecastApiURL)
+fetch(forecastApiUrl)
   .then(function (response) {
 	return response.json();
   })
@@ -71,4 +71,4 @@ fetch(forecastApiURL)
 		// Add card (div element) to class "flex" div element
 		document.querySelector("div.flex").appendChild(card);
 	}
-  });
+});
