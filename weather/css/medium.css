@@ -103,6 +103,12 @@
     font-size: 1.7rem;
   }
 
+  img.open-weather {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+  }
+
 
 
   /* Home Page */

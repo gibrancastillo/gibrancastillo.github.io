@@ -33,7 +33,7 @@ header {
   justify-items: left;
   align-items: center;
   padding: 15px 50px 15px 100px;
-  max-width: auto;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -256,19 +256,9 @@ p {
   margin: 0;
 }
 
-.stats span {
-  font-style: italic;
-  font-weight: 700;
-}
 
-
-.fiveday {
-  font-size: 3rem;
-}
-
-.flex {
+.flex-div {
   display: flex;
-  flex-flow: row wrap;
 }
 
 .flex-col {
@@ -368,7 +358,7 @@ td {
   font-size: 1.5em;
 }
 
-.featured-article {
+.fiveday, .featured-article {
   font-size: 3rem;
 }
 
@@ -457,7 +447,7 @@ footer {
   font-family: 'Karla', sans-serif;
   text-align: center;
   margin-top: 10px;
-  max-width: auto;
+  max-width: 100%;
   margin: 0 auto;
   width: auto;
   max-width: 100%;
@@ -474,8 +464,8 @@ footer a:hover {
 }
 
 img.open-weather {
-  width: 150;
-  height: 150;
+  width: 450px;
+  height: 250px;
   border-radius: 10px;
 }
 
@@ -486,10 +476,7 @@ body {
   padding: 1em;
 }
 
-.four-seasons {
-  /* align-content: center; */
-  float: center;
-}
+
 
 picture.responsive_four_seasons_image {
   display: block;

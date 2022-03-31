@@ -68,7 +68,7 @@ fetch(forecastApiURL)
 		spanTemp.textContent = roundTemp + "°F";
 		card.appendChild(spanTemp);
 
-		// Add card (div element) to class "flex" div element
-		document.querySelector("div.flex").appendChild(card);
+		// Add card (div element) to class "flex-div" div element
+		document.querySelector("div.flex-div").appendChild(card);
 	}
   });

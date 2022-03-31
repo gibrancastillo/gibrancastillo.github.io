@@ -64,7 +64,6 @@
                 <source media="(max-width: 700px)" srcset="./assets/preston/wdd230_image_franklinOriginal800.webp">
                 <source media="(max-width: 1000px)" srcset="./assets/preston/wdd230_image_franklinOriginal1100.webp">
                 <img src="./assets/preston/wdd230_image_franklinOriginal.jpeg" alt="WDD230 Franklin Original Image">
-                <figcaption>Hero Image</figcaption>
             </picture>
             <section class="stats">
                 <h2>Weather Summary</h2>
@@ -79,7 +78,7 @@
         <br><br>
 
         <h2 class="fiveday">Five Day Forecast</h2>
-        <div class="flex"></div>
+        <div class="flex-div"></div>
 
         <br><br><br>
 
@@ -125,14 +124,15 @@
     </div>
 
     <footer>
-        <span>&copy; <span id="year"></span>
-        <span> | Gibran E. Castillo | Honduras | </span>
-        <a href="../index.html" target="_blank">Assignment Portal</a>
         <br>
+        <span>
+            &copy; <span id="year"></span>
+            <span> | Gibran E. Castillo | Honduras | </span>
+            <a href="../index.html" target="_blank">Assignment Portal</a>
+        </span>
         <span id="current_date"></span>
-        <br><br>
-        <span>Powered by the <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></span>
         <br>
+        <span>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></span>
         <a href="https://openweathermap.org/" target="_blank">
             <picture>
                 <source media="(max-width: 100px)" srcset="./assets/open_weather_logo200.webp">
@@ -142,6 +142,7 @@
                 <img class="open-weather" src="./assets/open_weather_logo.webp" alt="The OpenWeatherMap logo image">
             </picture>
         </a>
+        <br>
     </footer>
 
     <script src="./js/windchill.js" defer></script>
