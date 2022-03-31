@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Blue Sky Weather Site">
+    <meta name="author" content="Gibran Castillo">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- phone-default -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- enhance-tablet -->
+    <link rel="stylesheet" href="./css/medium.css">
+    <!-- enhance-desktop -->
+    <link rel="stylesheet" href="./css/small.css">
+
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>The Blue Sky Weather Site - Preston</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="./assets/weather_logo.png" alt="The Blue Sky Weather Site Logo">
+        <section>
+            <h1 class="header-title">The Blue Sky Weather Site</h1>
+            <div class="motto">-"The most accurate weather"</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="ham" onclick="toggleMenu()">&#9776 Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="herodiv">
+            <!-- srcset using Pixel Density -->
+            <!-- <img src="./assets/preston/summaryherosmall.png" alt="The Blue Sky Weather Site Hero Image"
+            srcset="./assets/preston/summaryherosmall.png 1x,
+            ./assets/preston/summaryheromedium.png 2x,
+            ./assets/preston/summaryherolarge.png 3x">
+            <figcaption>Hero Image</figcaption> -->
+
+            <!-- srcset using Width -->
+            <!-- <picture>
+                <img src="./assets/preston/weather_hero.jpeg" alt="The Blue Sky Weather Site Hero Image" sizes="50vw"
+                srcset="./assets/preston/weather_hero200.webp 200w,
+                ./assets/preston/weather_hero500.webp 500w,
+                ./assets/preston/weather_hero800.webp 800w">
+                <figcaption>Hero Image</figcaption>
+            </picture> -->
+
+            <!-- Picture tag and media queries -->
+            <picture class="responsive_hero_image">
+                <source media="(max-width: 100px)" srcset="./assets/preston/wdd230_image_franklinOriginal200.webp">
+                <source media="(max-width: 300px)" srcset="./assets/preston/wdd230_image_franklinOriginal400.webp">
+                <source media="(max-width: 700px)" srcset="./assets/preston/wdd230_image_franklinOriginal800.webp">
+                <source media="(max-width: 1000px)" srcset="./assets/preston/wdd230_image_franklinOriginal1100.webp">
+                <img src="./assets/preston/wdd230_image_franklinOriginal.jpeg" alt="WDD230 Franklin Original Image">
+                <figcaption>Hero Image</figcaption>
+            </picture>
+            <section class="stats">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="currently"></span></p>
+                <p>High: <span id="temperature"></span> &deg;F</p>
+                <p>Wind Chill: <span id="chill"></span> &deg;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="speed"></span> mph</p> 
+            </section>
+        </div>
+
+        <br><br>
+
+        <h2 class="fiveday">Five Day Forecast</h2>
+        <div class="flex"></div>
+
+        <br><br><br>
+
+        <div class="article">
+            <div id="travel-par">
+                <h2 class="featured-article">Featured article: Family Activities</h2>
+                <img class="travel-time" src="./assets/preston/flower.png" alt="A beautiful yellow flower image" />
+                <p >
+                    In the beautiful town of Preston, Idaho families enjoy exploring the beautiful scenery by hiking through the mountains, 
+                    fishing in nearby rivers, and watching the sun set over the plains. Each season has different activities to offer. 
+                    In the winter months, families change into their snow gear to ski, snowshoe, or snowmobile. If staying warm is more your style, 
+                    then there are wonderful resorts with hot tubs and indoor activities that provide for ample family time and creating memories to last a lifetime.
+                </p>
+            </div>        
+        </div>
+        <br><br>
+
+        <div class="town-events"></div>
+
+        <br><br>
+    </main>
+
+    <div class="preston-contact">
+        <div class="preston-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1647361711732!5m2!1sen!2sus" loading="lazy"></iframe>
+        </div>
+        <div class="preston-contact-us">
+            <h3>Contact Information</h3>
+            <p>📍 777 E 7th S, Preston, ID 83263, USA</p>
+            <p>📧 <a href="info@blueskyweather.info?subject=Inquiry">info@blueskyweather.info</a></p>
+            <p>☎️ <a href="tel:2083439567">+1 (208) 343-9567</a></p>
+            
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="social-media" src="./assets/fb_logo.png" alt="Facebook logo link to Facebook website"/>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img class="social-media" src="./assets/twitter_logo.png" alt="Twitter logo link to Twitter website"/>
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img class="social-media" src="./assets/github_logo.png" alt="GitHub logo link to GitHub website"/>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; <span id="year"></span>
+        <span> | Gibran E. Castillo | Honduras | </span>
+        <a href="../index.html" target="_blank">Assignment Portal</a>
+        <br>
+        <span id="current_date"></span>
+        <br><br>
+        <span>Powered by the <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></span>
+        <br>
+        <a href="https://openweathermap.org/" target="_blank">
+            <picture>
+                <source media="(max-width: 100px)" srcset="./assets/open_weather_logo200.webp">
+                <source media="(max-width: 300px)" srcset="./assets/open_weather_logo400.webp">
+                <source media="(max-width: 700px)" srcset="./assets/open_weather_logo800.webp">
+                <source media="(max-width: 1000px)" srcset="./assets/open_weather_logo1100.webp">
+                <img class="open-weather" src="./assets/open_weather_logo.webp" alt="The OpenWeatherMap logo image">
+            </picture>
+        </a>
+    </footer>
+
+    <script src="./js/windchill.js" defer></script>
+    <script src="./js/weatherapi.js" defer></script>
+    <script src="./js/prestonapi.js" defer></script>
+    <script src="./js/tbsws.js" defer></script>
+</body>
+</html>
