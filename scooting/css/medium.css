@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px) {
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+  header img {
+    height: 105px;
+  }
+
+  header h1,
+  header h2 {
+    font-weight: 200px;
+  }
+
+  header h1 {
+    font-size: 2.85rem;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAVIGATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav li {
+    width: 25%;
+    float: left;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    padding: .9rem 1.5rem;
+  }
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+  footer {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 2.2em;
+  }
+}
