@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/small.css">  <!-- smartphone-default -->
     <link rel="stylesheet" href="../css/medium.css"> <!-- enhance-tablet -->
     <link rel="stylesheet" href="../css/large.css">  <!-- enhance-desktop -->
-    <link rel="stylesheet" href="../css/site-plan.css">
+    <!-- <link rel="stylesheet" href="../css/site-plan.css"> -->
     
     <title>Scooting Rentals</title>
   </head>
@@ -26,7 +26,7 @@
 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <header class="clearfix">
       <div id="site-info" class="row limited">
-        <section class="column small-12">
+        <section class="header-column small-12">
           <img id="site-logo" src="../assets/scooting-logo.png" alt="Scooting Rentals Logo Image">
           <h1 id="site-title">Scooting Rentals</h1>
           <h2 id="site-motto">Fantastic Scoots Shop</h2>
@@ -51,42 +51,35 @@
 
 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <main class="clearfix">
-      <div class="row limited">
+      <div class="hero-image">
+        <div class="hero-text">
+          <button>RESERVED NOW</button>
+        </div>
+      </div>
+
+      <div class="main-div">
         <h2>Cozumel, Quintana Roo, México</h2>
-        <section class="column small-12">
-          <picture class="responsive_hero_image">
-            <source media="(max-width: 100px)" srcset="assets/home/1_cozumel_hero_image200.webp">
-            <source media="(max-width: 300px)" srcset="../assets/home/1_cozumel_hero_image400.webp">
-            <source media="(max-width: 700px)" srcset="../assets/home/1_cozumel_hero_image800.webp">
-            <source media="(max-width: 1000px)" srcset="../assets/home/1_cozumel_hero_image1100.webp">
-            <img src="../assets/placeholder/1200x800.svg" data-src="../assets/home/1_cozumel_hero_image.webp" alt="A beautiful beach resort image in conzumel island">
-          </picture>
-          <section class="stats">
-            <h2>Weather Summary</h2>
-            <p>Condition: <span id="condition"></span></p>
-            <p>Currently: <span id="currently"></span></p>
-            <p>High: <span id="temperature"></span> &deg;F</p>
-            <p>Wind Chill: <span id="chill"></span> &deg;F</p>
-            <p>Humidity: <span id="humidity"></span>%</p>
-            <p>Wind Speed: <span id="speed"></span> mph</p> 
-          </section>
+        <picture class="responsive_hero_image">
+          <source media="(max-width: 100px)" srcset="../assets/home/5_conzumel_beach200.webp">
+          <source media="(max-width: 300px)" srcset="../assets/home/5_conzumel_beach400.webp">
+          <source media="(max-width: 700px)" srcset="../assets/home/5_conzumel_beach800.webp">
+          <source media="(max-width: 1000px)" srcset="../assets/home/5_conzumel_beach1100.webp">
+          <img src="../assets/placeholder/1200x800.svg" data-src="../assets/home/5_conzumel_beach.webp" alt="A beautiful beach resort image in conzumel island">
+        </picture>
+        <section class="stats">
+          <h2>Weather Summary</h2>
+          <p>Condition: <span id="condition"></span></p>
+          <p>Currently: <span id="currently"></span></p>
+          <p>High: <span id="temperature"></span> &deg;F</p>
+          <p>Wind Chill: <span id="chill"></span> &deg;F</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind Speed: <span id="speed"></span> mph</p> 
+        </section>
+        <section class="center content">
+          <h2 class="fiveday">Five Day Forecast</h2>
+          <div class="flex-div"></div>
         </section>
       </div>
-      
-      <section class="center content">
-        <div class="left">
-          <h2>Site Purpose</h2>
-          <p>
-            To provide locals and visitors to the Scooting Rentals Site with pertinent scoots and weather information.
-            It aims to broadcasts scoots and weather forecasts and weather-related news and analysis that that will assist 
-            people in making decisions for outdoor activities and local events in Cozumel.
-          </p>
-        </div>    
-        <div class="right domain">
-          <h2>Domain Name</h2>
-          <p><a href="#">scootingrentals.fun</a></p>
-        </div>
-      </section>
     </main>
 
 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->

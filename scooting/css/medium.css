@@ -39,13 +39,11 @@
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
-.hero_section {
-  display: block;
-  margin: 3%;
-  align-self: center;
-  position: relative;
-  max-width: 100%;
-}
+  .stats {
+    position: absolute;
+    top: 344px;
+    left: 35px;
+  }
 
 
 
