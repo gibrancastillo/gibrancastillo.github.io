@@ -114,12 +114,18 @@ nav a {
   padding: .7rem 1rem;
 }
 
-nav li.active {
+nav a.active {
+  color: #0F0D0C;
   background-color: #7791AB;
 }
 
 nav a:hover {
   background-color: #472D30;
+}
+
+nav a.active:hover {
+  color: #eee;
+  background-color: #7791AB;
 }
 
 nav ul.open {
@@ -132,7 +138,12 @@ nav ul {
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
-main h2 {
+.hero_section {
+  align-self: center;
+  position: relative;
+}
+
+/* main h2 {
   color: #0F0D0C;
   font-style: italic;
   margin: .5rem 0 .1rem 0;
@@ -152,7 +163,7 @@ main p {
 
 .center div {
   flex: 1 1 100%;
-}
+} */
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
