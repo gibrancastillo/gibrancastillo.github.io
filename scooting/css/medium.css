@@ -41,8 +41,37 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
   .stats {
     position: absolute;
-    top: 344px;
+    top: 480px;
     left: 35px;
+  }
+
+
+  .cozumel-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cozumel-map {
+    padding-top: 20px;
+  }
+
+  iframe {
+    margin-left: 2%;
+    width: 1050px;
+    height: 700px;
+  }
+
+  .cozumel-contact-us {
+    float: left;
+    font-size: 1.5rem;
+  }
+
+  div.cozumel-contact-us {
+    font-size: 1.9rem;
+  }
+  
+  div.cozumel-contact-us p {
+    font-size: 1.7rem;
   }
 
 

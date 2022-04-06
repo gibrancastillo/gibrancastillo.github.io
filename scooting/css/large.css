@@ -34,49 +34,40 @@
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/home/5_conzumel_beach.webp");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-.responsive_hero_image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+main img {
+	width: 100%;
+	height: 100%;
 }
 
 .stats {
-  top: 344px;
-  left: 35px;
+  top: 544px;
+  left: 755px;
+}
+
+
+
+.cozumel-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.cozumel-map {
+  padding-top: 30px;
+}
+
+iframe {
+  margin-left: 0%;
+  width: 1440px;
+  height: 900px;
+}
+
+.cozumel-contact-us {
+  font-size: 3.1rem;
+  grid-column: span 2;
+}
+
+div.cozumel-contact-us p {
+  font-size: 2rem;
 }
 
   
