@@ -1,6 +1,6 @@
 //OpenWeatherMap: API Key (AppId) - 3269efc82e03c378edf3680c194b11a1
-const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3269efc82e03c378edf3680c194b11a1";
-const forecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=3269efc82e03c378edf3680c194b11a1";
+const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&appid=3269efc82e03c378edf3680c194b11a1";
+const forecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&appid=3269efc82e03c378edf3680c194b11a1";
 
 fetch(weatherApiUrl)
   .then(function (response) {
@@ -8,8 +8,13 @@ fetch(weatherApiUrl)
   })
   .then(function (jsonObject) {
     // console.table(jsonObject); // temporary checking for valid response and data parsing
+	let temp = jsonObject.main.temp;
+    let speed = jsonObject.wind.speed;
+    let chill = 35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16; 
+    document.querySelector("#chill").textContent = Math.round(chill); 
 	
 	if(document.querySelector("#currently") !== null) {
+		document.querySelector("#condition").textContent = jsonObject.weather[0].description;
 		document.querySelector("#currently").textContent = jsonObject.weather[0].main;
 		document.querySelector("#temperature").textContent = jsonObject.main.temp;
 		document.querySelector("#humidity").textContent = jsonObject.main.humidity;
