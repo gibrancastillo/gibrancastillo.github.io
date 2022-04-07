@@ -68,9 +68,10 @@ fetch(forecastApiUrl)
 		// Forecast Current Temperature
 		let spanTemp = document.createElement("span");
 		spanTemp.setAttribute("class", "data");
-		let floatTemp = parseFloat(forecasts[i].main.temp);
-		let roundTemp = Math.round(floatTemp);
-		spanTemp.textContent = roundTemp + "°F";
+		// let floatTemp = parseFloat(forecasts[i].main.temp_max);
+		let roundTempMax = Math.round(parseFloat(forecasts[i].main.temp_max));
+		let roundTempMin = Math.round(parseFloat(forecasts[i].main.temp_min));
+		spanTemp.textContent = "H:" + roundTempMax + "°  L:" +  + roundTempMin + "°";
 		card.appendChild(spanTemp);
 
 		// Add card (div element) to class "flex-div" div element
