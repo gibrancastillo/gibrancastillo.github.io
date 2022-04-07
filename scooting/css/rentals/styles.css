@@ -1,0 +1,129 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* Small: smartphone-defaul */
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+}
+
+.groud {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  padding: .5em;
+  color: #fff;
+  background-color: #D84233;
+  border: 2px solid #000;
+}
+
+#list:active {
+  color: #000;
+}
+
+#grid:active {
+  color: #000;
+}
+
+#list i {
+  font-size: 30px;
+  margin: .1em;
+  cursor: pointer;
+}
+
+#grid i {
+  font-size: 30px;
+  margin: .1em;
+  cursor: pointer;
+}
+
+.rental-list {
+  display: grid;
+  padding: 1em;
+}
+
+.rental-list section {
+  border: 1px solid #000;
+  padding: 1em;
+  background-color: #454040;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.rental-list section>h2,
+.rental-list p {
+  display: inline;
+  margin-left: 1em;
+  width: 100%;
+}
+
+.rental-list section img {
+  display: none;
+}
+
+.rental-grid section img {
+  width: 250px;
+  height: 350px;
+  margin: .5em;
+}
+
+.rental-grid section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #454040;
+  color: #fff;
+}
+
+.rental-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 1em;
+  grid-gap: 5px;
+}
+
+.rental-grid section>h2,
+.rental-grid p {
+  text-align: center;
+}
+
+.rental-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Medium: enhance-tablet */
+@media only screen and (min-width: 768px) {
+  #rental {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .rental-grid section img {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+
+/* Large: enhance-desktop */
+@media only screen and (min-width: 1140px) {
+  #rental {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  }
+
+  .rental-grid section img {
+    width: 400px;
+    height: 500px;
+  }
+}

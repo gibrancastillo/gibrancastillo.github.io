@@ -1,3 +1,8 @@
+/* ########################################################################################## */
+/* ###                     Medium CSS with the focus on Mobile First                      ### */
+/* ########################################################################################## */
+
+
 @media only screen and (min-width: 768px) {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
   header img {
@@ -43,38 +48,7 @@
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
-  .hero-text button {
-    font-size: 2rem;
-  }
-
-  .stats {
-    position: absolute;
-    top: 480px;
-    left: 35px;
-  }
-
-  .col-head,
-  th {
-    font-size: 1.6rem;
-  }
-
-  td {
-    font-size: 1.25rem;
-  }
-
-  .data {
-    font-size: 1.25rem;
-  }
-
-  .flex-item-left img {
-    width: 700px;
-    height: 900px;
-  }
-  
-  .flex-item-right img {
-    width: 700px;
-    height: 900px;
-  }
+  /* See the web page's specific styles.css file  */
 
   .cozumel-contact {
     flex-direction: column;
@@ -86,7 +60,7 @@
   }
 
   iframe {
-    margin-left: 2%;
+    margin-left: 1%;
     width: 1050px;
     height: 700px;
   }
@@ -103,7 +77,6 @@
   div.cozumel-contact-us p {
     font-size: 1.7rem;
   }
-
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
