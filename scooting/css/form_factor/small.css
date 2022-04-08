@@ -4,6 +4,7 @@
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMMON <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap");
 
 html {
@@ -144,6 +145,120 @@ main div h1 {
   font-size: 3.5rem;
   text-shadow: .25rem .25rem .75rem #333;
   margin-bottom: 1rem;
+}
+
+.responsive_hero_image img {
+  width: 100%;
+  height: auto;
+}
+
+.stats {
+  top: 35px;
+  left: 15px;
+  opacity: 0.6;
+  margin: 1.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid #000000;
+  background: radial-gradient(#ac7e62, #f7f5f3);
+}
+
+.stats span {
+  font-style: italic;
+  color: #D84233;
+  font-weight: 700;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  color: white;
+}
+
+.hero-text a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 20px 45px;
+  color: white;
+  background-color: #D84233;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.hero-text a:hover {
+  background-color: green;
+  color: white;
+}
+
+.flex-div {
+  display: flex;
+}
+
+table,
+th,
+td {
+  border: thin solid #333;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.flex-col {
+  flex: 1 1 auto;
+  background-color: #7791AB;
+}
+
+.flex-col {
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  text-align: center;
+}
+
+.flex-col:hover,
+td:hover {
+  opacity: 0.75;
+  background-color: #bdbdbd;
+  color: #1a1916;
+}
+
+.col-head,
+th {
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: #0F0D0C;
+  color: #f1f0ea;
+}
+
+.col-head {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid #0F0D0C;
+  text-align: center;
+}
+
+td {
+  background-color: #7791AB;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+img.image-day {
+  padding: 0.25rem;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+}
+
+.data {
+  display: block;
+  font-size: 1.1rem;
+  text-align: center;
+  color: black;
 }
 
 /* See the web page's specific styles.css file  */

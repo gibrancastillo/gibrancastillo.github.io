@@ -1,14 +1,21 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/* Small: smartphone-defaul */
+/* Main/Small: smartphone-defaul */
+ul.culture_history {
+  font-family: "Karla", sans-serif;
+  list-style-type: circle;
+  text-align: left;
+  font-size: 2rem;
+}
 
+ul.culture_history li {
+  padding: 20px;
+}
 
 
 /* Medium: enhance-tablet */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 
 /* Large: enhance-desktop */
-@media only screen and (min-width: 1140px) {
-}
+@media only screen and (min-width: 1140px) {}

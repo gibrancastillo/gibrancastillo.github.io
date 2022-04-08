@@ -48,7 +48,15 @@
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
-  /* See the web page's specific styles.css file  */
+  .stats {
+    position: absolute;
+    top: 480px;
+    left: 35px;
+  }
+  
+  .hero-text a {
+    font-size: 2rem;
+  }
 
   .cozumel-contact {
     flex-direction: column;

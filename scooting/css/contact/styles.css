@@ -1,14 +1,104 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /* Small: smartphone-defaul */
+.banner-container {
+  background-image: url("../../assets/contact/4_cozumel_cruise.webp");
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
+#flex-form {
+  margin-top: 3.5em;
+  background-color: rgba(85, 84, 84, 0.8);
+  width: 400px;
+  height: 540px;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.contact-div {
+  color: #fff;
+  font-size: 37px;
+  margin: 0 2em 10px 2em;
+  padding: .5rem;
+  text-align: center;
+  border-bottom: 4px solid #D84233;
+  padding-bottom: 3px;
+}
+
+.icon-mjs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 3em;
+  color: #fff;
+}
+
+.form-label {
+  color: #fff;
+  line-height: 40px;
+}
+
+.form-control {
+  display: block;
+  line-height: 1.7em;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.226);
+  height: 40px;
+}
+
+.form-control:hover {
+  border: 2px solid #D84233;
+}
+
+.form-control::placeholder {
+  color: #fff;
+}
+
+.form-control {
+  color: #fff;
+  padding-left: 10px;
+}
+
+.c-description {
+  width: 100%;
+}
+
+.c-description::placeholder {
+  font-family: 'Belleza', sans-serif;
+  font-size: 16px;
+}
+
+.btn-cont {
+  border: none;
+  padding: .5em;
+  background-color: #D84233;
+  color: #fff;
+  border-radius: 5px;
+  float: right;
+  font-size: 14px;
+  width: 80px;
+}
+
+.btn-cont:hover {
+  cursor: pointer;
+  background-color: #00461e
+}
 
 
 /* Medium: enhance-tablet */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 
 /* Large: enhance-desktop */
 @media only screen and (min-width: 1140px) {
+  .banner-container {
+    height: 900px;
+  }
 }
