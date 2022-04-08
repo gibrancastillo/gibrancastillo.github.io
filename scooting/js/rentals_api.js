@@ -3,9 +3,9 @@ const list = document.querySelector("#list");
 const rental = document.querySelector("#rental");
 
 const rentalsApiUrl = "../assets/data/data.json";
-const rentalsApiMockUrl = "https://run.mocky.io/v3/c7c88af0-3856-4253-aa7d-3a5c7f795e1c";
+//const rentalsApiMockUrl = "https://run.mocky.io/v3/c7c88af0-3856-4253-aa7d-3a5c7f795e1c";
 
-fetch(rentalsApiMockUrl)
+fetch(rentalsApiUrl)
   .then((response) => response.json())
   .then((jsonObject) => {
       console.table(jsonObject);
@@ -22,7 +22,6 @@ grid.addEventListener("click", (event) => {
   rental.classList.remove("rental-list")
   rental.classList.add("rental-grid")
 });
-
 
 function displayCards(card) {
   // Create elements to add to the document
@@ -62,6 +61,4 @@ function displayCards(card) {
 
   // Add/append the existing HTML div with the cards class with the section(card)
   rental.appendChild(card_section);
-
 }
-

@@ -51,7 +51,92 @@
 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <main class="clearfix">
       <div class="row limited">
-          <!-- FORM -->
+        <h1>Reserve a Vehicle</h1>
+        <form method="get" action="confirmation.html">
+          <fieldset>
+            <legend>Renter's Information</legend>
+            <label class="top">Full Name* <input type="text" name="fname" minlength="5" required></label>
+            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label class="top">Phone Number* <input type="tel" name="phone" placeholder="1235551234" minlength="10" required></label>
+            <label class="top">Cruise line if applicable 
+              <input type="text" id="cruisetypes" list="cruiselines">
+              <!-- <input type="text" name="cruiseline" list="cruiselines"> -->
+              <datalist id="cruiselines">
+                <option value="">&#9662;</option>
+                <!-- <option value="" disabled selected></option> -->
+                <option value="Princess">
+                <option value="Celebrity">
+                <option value="Carnival">
+                <option value="Royal Caribbean">
+                <option value="Disney">
+                <option value="Norwegian">
+              </datalist>
+            </label>
+            <label class="top">Country <input type="text" name="country"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Rental Information</legend>
+            <label class="top">Date of Rental* <input type="date" name="stormDate" required></label>
+            <label class="top">Rental Time Type*
+              <select name="rental_time_type" required>
+                <option value="" disabled selected>-- Please Select Time --</option>
+                <option value="Half">Half Day(3 hrs)</option>
+                <option value="Full">Full Day</option>
+              </select>
+            </label>
+            <label class="top">Vehicle Type*
+              <select name="vehicle_type" required>
+                <option value="" disabled selected>-- Please Select Rental Type --</option>
+                <option value="honda_dio">Honda Dio Scooter</option>
+                <option value="honda_metro">Honda Metro Scooter</option>
+                <option value="honda_pcx_150">Honda PCX150 Scooter</option>
+                <option value="honda_pioneer">Honda Pioneer ATV</option>
+                <option value="jeep2door">Jeep Wrangler—2 door</option>
+                <option value="jeep4door">Jeep Wrangler—4 door with A/C</option>
+              </select>
+            </label>
+            <label class="top">Rental Location*
+              <select name="rental_location" required>
+                <option value="" disabled selected>-- Please Select Rental Location --</option>
+                <option value="ferry_dock">Playa del Carmen-Cozumel Ferry dock</option>
+                <option value="terminal">Terminal Puerta Maya</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Special Accomodations</legend>
+            <div>Any special arrangements needed? <em>(Choose one)</em></div>
+            <!-- sbs - side by side -->
+            <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+            <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+            <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+            <label class="top">Additional information or comments
+              <textarea name="comments" cols="20" rows="3" placeholder="Write comments here..."></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Transport Vehicle Lease Agreement</legend>
+            <div class="specs">
+              <ul>
+                <h2>Specifications</h2>
+                <li>The lessor owns the vehicle.</li>
+                <li>THE LESSOR certifies that the vehicle referred to in the preceding clause
+                      is in good mechanical condition and conservation of bodywork, paint, and 
+                      accessories, without greater wear than that produced by normal and ordinary use.</li>
+                <li>By this contract, THE LESSOR undertakes to transfer the use of the property described in the 
+                    first clause in favor of THE LESSEE, by way of lease. For its part, THE LESSEE undertakes 
+                    to pay THE LESSOR the amount of the rent agreed in the following clause, in the manner 
+                    and at the agreed time.</li>
+              </ul>
+              <label class="sbs"><input type="checkbox" name="terms" required> I Agree to all Terms & Conditons</label>
+            </div>
+          </fieldset>
+
+          <input type="submit" value="Reserve Vehicle" class="submitBtn">
+        </form>
       </div>
     </main>
     

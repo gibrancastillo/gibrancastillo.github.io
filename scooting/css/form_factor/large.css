@@ -49,7 +49,14 @@
     height: 100%;
   }
 
-  /* See the web page's specific styles.css file  */
+  .stats {
+    top: 744px;
+    left: 600px;
+  }
+
+  .hero-text a {
+    font-size: 2.5rem;
+  }
 
   .cozumel-contact {
     display: flex;

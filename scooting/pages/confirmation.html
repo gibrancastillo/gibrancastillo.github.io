@@ -52,7 +52,36 @@
 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <main class="clearfix">
       <div class="row limited">
-          <!-- FORM Submission confirmation -->
+        <h1>Confirmation of Rental Request</h1>
+        <p class="got_info">We've got your information and look forward to meeting you at the location of your choice.</p>
+
+        <br><br>
+
+        <picture class="responsive_hero_image">
+          <source media="(max-width: 200px)" srcset="../assets/reservations/1_cozumel_hero_image200.webp">
+          <source media="(max-width: 400px)" srcset="../assets/reservations/1_cozumel_hero_image400.webp">
+          <source media="(max-width: 800px)" srcset="../assets/reservations/1_cozumel_hero_image800.webp">
+          <source media="(max-width: 1000px)" srcset="../assets/reservations/1_cozumel_hero_image1100.webp">
+          <img src="../assets/placeholder/1200x800.svg" data-src="../assets/reservations/1_cozumel_hero_image.webp" alt="A beautiful beach resort image in conzumel island">
+        </picture>
+        <section class="stats">
+          <h2>Weather Summary</h2>
+          <p>Condition: <span id="condition"></span></p>
+          <p>Currently: <span id="currently"></span></p>
+          <p>High: <span id="temperature"></span> &deg;F</p>
+          <p>Wind Chill: <span id="chill"></span> &deg;F</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind Speed: <span id="speed"></span> mph</p> 
+        </section>
+
+        <br><br><br><br>
+        
+        <section class="center content">
+          <h2 class="fiveday">Five Day Forecast</h2>
+          <div class="flex-div"></div>
+        </section>
+        
+        <br><br><br><br>
       </div>
     </main>
     
@@ -81,6 +110,7 @@
     <script src="../js/toggle_menu.js"></script>
     <script src="../js/date_info.js" defer></script>
     <script src="../js/images_lazy_load.js" defer></script>
+    <script src="../js/weather_api.js" defer></script>
 
   </body>
 </html>

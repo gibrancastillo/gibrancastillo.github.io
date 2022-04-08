@@ -1,6 +1,6 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/* Small: smartphone-defaul */
+/* Main/Small: smartphone-defaul */
 .links {
   display: flex;
   flex-direction: row;
@@ -96,6 +96,17 @@
 .rental-grid {
   display: flex;
   flex-direction: column;
+}
+
+ul.rent_info {
+  font-family: "Karla", sans-serif;
+  list-style-type: square;
+  text-align: left;
+  font-size: 2rem;
+}
+
+ul.rent_info li {
+  padding: 20px;
 }
 
 
