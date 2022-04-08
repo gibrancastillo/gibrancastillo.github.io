@@ -1,0 +1,21 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* Main/Small: smartphone-defaul */
+ul.attributions {
+  font-family: "Karla", sans-serif;
+  list-style-type: square;
+  text-align: left;
+  font-size: 2rem;
+}
+
+ul.attributions li {
+  padding: 20px;
+}
+
+
+/* Medium: enhance-tablet */
+@media only screen and (min-width: 768px) {}
+
+
+/* Large: enhance-desktop */
+@media only screen and (min-width: 1140px) {}
